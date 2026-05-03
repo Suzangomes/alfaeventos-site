@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfaeventos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="topo">
+
+    <!-- MENU ESQUERDA -->
+    <nav class="menu">
+        <button onclick="mostrar('sobre')">Sobre nós</button>
+        <button onclick="mostrar('servicos')">Serviços</button>
+        <button onclick="mostrar('eventos')">Eventos</button>
+    </nav>
+
+    <!-- CENTRO (IMAGEM) -->
+    <div class="centro">
+        <img src="images/fundo.png" class="foto-central">
+    </div>
+
+    <!-- DIREITA (LOGO) -->
+    <div class="logo-container">
+        <img src="images/Logo.jpg" class="logo">
+    </div>
+
+</header>
+
+<!-- SERVIÇOS -->
+<section id="servicos">
+    <h2>Serviços</h2>
+
+    <div class="servico" onclick="toggleServico(this)">
+        <h3>Bar de Drinks</h3>
+        <div class="descricao">
+            <img src="images/drinks.png">
+            <p>Drinks personalizados, equipe treinada e experiência completa para seu evento.</p>
+        </div>
+    </div>
+
+    <div class="servico" onclick="toggleServico(this)">
+        <h3>Coreografias</h3>
+        <div class="descricao">
+            <img src="images/coreografia.png">
+            <p>Animação com coreografias que envolvem todos os convidados.</p>
+        </div>
+    </div>
+
+    <div class="servico" onclick="toggleServico(this)">
+        <h3>Experiência de pista</h3>
+        <div class="descricao">
+            <img src="images/pista.png">
+            <p>Interação, música e energia pra pista ficar cheia do início ao fim.</p>
+        </div>
+    </div>
+</section>
+
+<!-- SOBRE -->
+<section id="sobre">
+    <h2>Sobre nós</h2>
+
+    <p>A Alfaeventos nasceu com um propósito simples: transformar eventos em experiências inesquecíveis.</p>
+    <p>Não entregamos apenas serviços — criamos momentos, energia e conexão.</p>
+    <p>Nosso compromisso é com a alegria e com a memória que cada cliente vai levar pra vida.</p>
+</section>
+
+<!-- EVENTOS -->
+<section id="eventos">
+    <h2>Eventos</h2>
+
+    <div class="evento" onclick="toggleEvento(this)">
+        <h3>Casamentos</h3>
+        <div class="galeria-evento">
+            <img src="images/foto1.jpg">
+            <img src="images/foto2.jpg">
+        </div>
+    </div>
+
+    <div class="evento" onclick="toggleEvento(this)">
+        <h3>Formaturas</h3>
+        <div class="galeria-evento">
+            <img src="images/foto3.jpg">
+            <img src="images/foto4.jpg">
+        </div>
+    </div>
+
+    <div class="evento" onclick="toggleEvento(this)">
+        <h3>Debutantes</h3>
+        <div class="galeria-evento">
+            <img src="images/foto1.jpg">
+            <img src="images/foto2.jpg">
+        </div>
+    </div>
+</section>
+
+<!-- FORM -->
+<section class="form-section">
+    <h2>Solicite seu orçamento</h2>
+
+    <form id="formOrcamento">
+        <input type="text" placeholder="Seu nome" required>
+        <input type="text" placeholder="Telefone" required>
+        <input type="text" placeholder="Tipo de evento" required>
+        <textarea placeholder="Descreva seu evento"></textarea>
+        <button type="submit">Enviar orçamento</button>
+    </form>
+</section>
+
+<!-- GALERIA -->
+<section class="galeria">
+    <h2>Momentos que fazem a diferença</h2>
+
+    <div class="grid-galeria">
+        <img src="images/foto1.jpg">
+        <img src="images/foto2.jpg">
+        <img src="images/foto3.jpg">
+        <img src="images/foto4.jpg">
+    </div>
+</section>
+
+<!-- REDES -->
+<div class="footer-redes">
+    <a href="https://wa.me/5551981126836" target="_blank">
+        <img src="images/whats.jpeg">
+    </a>
+
+    <a href="https://www.instagram.com/alfaeventos_" target="_blank">
+        <img src="images/insta.jpg">
+    </a>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

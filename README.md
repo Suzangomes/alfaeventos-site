@@ -18,7 +18,9 @@ Projeto desenvolvido com HTML, CSS e JavaScript para uma empresa de eventos.
 
 # Preview
 
-![Preview do site](captura_tela.png) 
+## 📸 Preview
+
+![Preview do site](./captura_tela.png)
 
 # Objetivo
 
